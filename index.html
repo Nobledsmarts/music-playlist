@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script defer src="js/app.js"></script>
+		<script defer src="js/fn.js"></script>
+	</head>
+<body>
+	<div class='header' align='center'>
+		<div> Songs </div>
+		<div id="progress">
+			<span id="progressMsg">progress:</span>
+			<span id="currentProgress"></span>
+			<span id="seperator"> / </span>
+			<span id="progressTotal"></span>
+		</div>
+		<div id="upload-btn">
+			Upload
+		</div>
+	</div>
+	<div class="upload-cont">
+		<form action="javascript:void(0)">
+			<input accept="audio/*" type="file"
+			onchange = "file(this)" id="e" multiple/>
+		</form>
+	</div>
+	<div class='content' id="ct">
+		<ul id="cont"></ul>
+		<div id="con"></div>
+		<br><br>
+	</div>
+	<div class='footer' align='center'>
+		<audio id="as" controls>
+			
+		</audio>
+	</div>
+</body>
+</html>
+    
+    
+    
+    
+    

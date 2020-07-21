@@ -1,0 +1,141 @@
+body,html{
+	margin:0;
+	padding : 0;
+	height:100%;
+	width: 100%;
+	position : relative;
+	box-sizing : border-box;
+	overflow-x: hidden;
+}
+body{
+	background : #ccc;
+}
+.header{
+	position : relative;
+	background : #263238;
+	padding : 0px 0px;
+	color : #f9f9f9;
+	top: 0px;
+	height : 10%;
+	display : flex;
+	flex-direction : row;
+	align-items : center;
+	justify-content : space-between;
+	z-index: 10;
+	width: 100%;
+
+}
+.header div:first-of-type{
+	width : 20%;
+}
+.header #progress{
+	width : 60%;
+
+}
+.header div:last-of-type{
+	width : 20%;
+}
+#progress{
+	display: none;
+}
+ 
+input[type='file']{
+	color : #333;
+	border: 1px solid #2196F3;
+}
+
+::-webkit-file-upload-button {
+	background: #2196F3;
+	height: 30px;
+	border: none;
+	color : #f9f9f9;
+
+}
+.from-top{
+	/* position: relative !important; */
+	top : 10% !important;
+}
+.upload-cont{
+	height : 40px;
+	position: absolute;
+	background :#263238;;
+	width: 100%;
+	z-index: 9;
+	top: -10px;
+	transition: 0.5s ease-out;
+}
+.upload-cont form{
+	width: 100%;
+	position: relative;
+	display: flex;
+	display : flex;
+	flex-direction : row;
+	align-items : center;
+	justify-content : space-between;
+}
+.upload-cont input[type='file']{
+	position: relative;
+	margin: 3px auto;
+	background: #ccc;
+	width: 70%;
+}
+::-webkit-scrollbar-button{
+	/* background: red; */
+}
+::-webkit-scrollbar{
+	background: #2196F3;
+	padding: 0px;
+	width: 10px;
+	position: relative;
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(39, 45, 54, 0.53);
+	position: relative;
+	padding: 0px;
+	width: 5% !important;
+
+}
+
+.content{
+	background: #272d36;
+	width : 100%;
+	padding : 2px;
+	margin : 0px auto;
+    min-height : 70%;
+	height : 80%;
+	overflow-y: scroll;
+	color: #eceff1;
+}
+#cont{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+	margin-top: 20px;
+}
+#cont li{
+	padding: 15px 10px;
+	/* background: #fff; */
+
+}
+#cont li:not(:last-of-type){
+	border-bottom: 1px solid rgba(200, 200, 200, 0.30);
+}
+
+
+.footer{
+	position : absolute;
+	min-height: 10%;
+	background : #263238;
+	padding : 8px;
+	width : 100%;
+	color : #f9f9f9;
+	bottom : 0px;
+	box-sizing : border-box;
+}
+.footer audio{
+	position: relative;
+	width: 100%;
+	background: rgb(241, 243, 244);
+}
+    
